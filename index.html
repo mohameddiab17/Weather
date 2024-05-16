@@ -1,0 +1,152 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
+
+        <div class="container p-4">
+
+          <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+            <img src="imgs/logo.png " class="pe-2 me-2" alt="Logo">
+            <div class="logo-style">
+                <h1>Whether</h1>
+                <small class="text-muted"> tagline goes here</small>
+            </div>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-1">
+                <a class="nav-link nav-anchor-style py-2 px-4 active" aria-current="page" href="">Home</a>
+              </li>
+              <li class="nav-item px-1">
+                <a class="nav-link nav-anchor-style py-2 px-4 " href="">News</a>
+              </li>
+              <li class="nav-item px-1">
+                <a class="nav-link nav-anchor-style py-2 px-4" href="">Live Cameras</a>
+              </li>
+              <li class="nav-item px-1">
+                <a class="nav-link nav-anchor-style py-2 px-4" href="">Photos</a>
+              </li>
+              <li class="nav-item px-1">
+                <a class="nav-link nav-anchor-style py-2 px-4" href="">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        
+    </nav>
+
+    <header class="position-relative">
+        <div class="container-fluid form">
+            <form class="d-flex align-items-center justify-content-center">
+                
+                <input class=" form-input text-white w-75 me-2 py-3 px-3" type="text" id="search" placeholder="Find Your Location">
+                
+                <input class="form-btn py-3" " type="submit" value="Find">
+            </form>
+        </div>
+
+
+
+        <div class="container position-absolute start-0 end-0 box">
+          <div class="row text-white g-0">
+
+            <div class="col-md-4">
+              <div class="item">
+                <div class="item-title bg-title p-3 d-flex justify-content-between rounded-top-left">
+                  <span class="light-gray day">Saterday</span>
+                  <div>
+                    <span class="light-gray" id="day-number">15</span>
+                    <span class="light-gray" id="month">june</span>
+                  </div>
+                </div>
+                <div class="item-cap bg-item p-3 rounded-bottom-left box-height">
+                  <span class="fs-3 light-gray" id="country">Cairo</span>
+                  <div class="itam-cap-middle d-flex align-items-center justify-content-start py-4">
+                    <span class="temp fw-bold pe-5 letter-space" id="temp">30 <sup>o</sup> C</span>
+                    <img id="condition-icon"></img>
+                  </div>
+                  <span class="main-color" id="condition-text"></span>
+                  <div class="item-cap-bottom d-flex align-items-center pt-4">
+                    <div class="light-gray pe-4 fs-5">
+                      <i class="fa-solid fa-umbrella"></i>
+                      <span id="humidity">50%</span>
+                    </div>
+                    <div class="light-gray pe-4 fs-5">
+                      <i class="fa-solid fa-wind"></i>
+                      <span id="wind-kph">38 Km/h</span>
+                    </div>
+                    <div class="light-gray fs-5">
+                      <i class="fa-brands fa-nfc-directional"></i>
+                      <span id="wind-dir">E</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="item text-center">
+                <div class="item-title bg-title-middle p-3">
+                  <span class="light-gray next-day">Sunday</span>
+                </div>
+                <div class="item-cap bg-item-middle box-height">
+                  <img class="next-imgs mt-5 mb-2"></img>
+                  <div class="itam-cap-middle d-flex flex-column align-items-center justify-content-center py-4">
+                    <span class="fs-3 next-max-temp">18 C</span>
+                    <span class="light-gray next-min-temp">19.2 C</span>
+                  </div>
+                  <span class="main-color next-status">Partly cloudy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="item text-center">
+                <div class="item-title bg-title p-3 rounded-top-right">
+                  <span class="light-gray next-day">Monday</span>
+                </div>
+                <div class="item-cap bg-item box-height rounded-bottom-right">
+                  <img class="next-imgs mt-5 mb-2"></img>
+                  <div class="itam-cap d-flex flex-column align-items-center justify-content-center py-4">
+                    <span class="fs-3 next-max-temp">26 C</span>
+                    <span class="light-gray next-min-temp">15 C</span>
+                  </div>
+                  <span class="main-color next-status">Partly cloudy</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </header>
+
+    <footer class="text-white">
+      <div class="container">
+        <form class="d-flex align-items-center justify-content-center">
+          <input class=" form-input text-white w-75  me-2 py-3 px-3" type="text" id="search" placeholder="Enter your email to subscribe">
+          
+          <input class="form-btn py-3"  type="submit" value="Subscribe">
+        </form>
+      <p class="pt-4 ps-1 text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
